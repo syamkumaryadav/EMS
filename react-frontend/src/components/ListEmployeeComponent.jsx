@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import EmployeeService from '../services/EmployeeService'
+import 'bootstrap/dist/css/bootstrap.css';
 
 class ListEmployeeComponent extends Component {
     constructor(props) {
@@ -45,13 +46,12 @@ class ListEmployeeComponent extends Component {
                  <br></br>
                  <div className = "row">
                         <table className = "table table-striped table-bordered">
-
                             <thead>
                                 <tr>
-                                    <th> Employee First Name</th>
-                                    <th> Employee Last Name</th>
-                                    <th> Employee Email Id</th>
-                                    <th> Actions</th>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Email</th>
+                                    <th>Actions</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -63,9 +63,9 @@ class ListEmployeeComponent extends Component {
                                              <td> {employee.lastName}</td>
                                              <td> {employee.emailId}</td>
                                              <td>
-                                                 <button onClick={ () => this.editEmployee(employee.id)} className="btn btn-info">Update </button>
-                                                 <button style={{marginLeft: "10px"}} onClick={ () => this.deleteEmployee(employee.id)} className="btn btn-danger">Delete </button>
-                                                 <button style={{marginLeft: "10px"}} onClick={ () => this.viewEmployee(employee.id)} className="btn btn-info">View </button>
+                                                 <button onClick={ () => this.editEmployee(employee.id)} class="btn btn-outline-primary">Update</button>
+                                                 <button class="btn btn-outline-success" onClick={ () => this.deleteEmployee(employee.id)} className="btn btn-danger">Delete</button>
+                                                 <button class="btn btn-outline-warning" onClick={ () => this.viewEmployee(employee.id)} className="btn btn-info">View</button>
                                              </td>
                                         </tr>
                                     )

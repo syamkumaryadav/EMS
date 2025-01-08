@@ -1,4 +1,4 @@
-package net.javaguides.springboot.controller;
+package com.syam.springboot.controller;
 
 import java.util.HashMap;
 import java.util.List;
@@ -16,9 +16,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import net.javaguides.springboot.exception.ResourceNotFoundException;
-import net.javaguides.springboot.model.Employee;
-import net.javaguides.springboot.repository.EmployeeRepository;
+import com.syam.springboot.exception.ResourceNotFoundException;
+import com.syam.springboot.model.Employee;
+import com.syam.springboot.repository.EmployeeRepository;
 
 @CrossOrigin(origins = "http://localhost:3000")
 @RestController
